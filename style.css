@@ -1,0 +1,155 @@
+:root {
+  --bg-color: #0b141d;
+  --text-color: white;
+  --nav-bg: rgba(26, 25, 29, 0.9);
+  --card-bg: #2a2a2f;
+  --card-bg-hard: #25252b;
+  --soft-check-color: #00bfff;
+  --hard-check-color: #ff8c00;
+}
+
+
+body{
+      background-color: #1a191d;
+}
+
+.box{
+  width:80%;
+  margin: 0 auto;
+}
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a191d;
+}
+.nav_links{
+width:40%;
+display: flex;
+justify-content: space-between;  
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size:20px;
+}
+.cyan{
+  color: cyan;
+}
+.nav_text{
+  color: white;
+}
+header{
+  width: 100%;
+  margin-top: 200px;
+
+}
+.header_text{
+  color: white;
+  font-size: 84px;
+  text-align: center;
+}
+.header_pre_text{
+  color: white;
+  text-align: center;
+}
+main{
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main_text{
+  width: 100%;
+  color: white;
+  font-size: 42px;
+  text-align: center;
+}
+.skills_blocks{
+  width:90%;
+  border: 1px solid rgb(115, 115, 115);
+  display: flex;
+  justify-content: space-between;
+
+}
+.skills_block{
+  width:50%;
+  border: 2px solid rgb(115, 115, 115);
+}
+.skills_text{
+  text-align: center;
+  color: white;
+
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 6px; /* толщина линии */
+      border-top: 17px;
+}
+.skills_text1{
+  text-align: center;
+  color: white;
+
+    text-decoration: underline;
+    text-decoration-color: red;
+
+    text-decoration-thickness: 6px; /* толщина линии */
+    border-top: 17px; /* расстояние между текстом и подчеркиванием */
+}
+li{
+  color: white;
+  font-size: 24px;
+}
+.nav_links a {
+  color: white; /* Исходный цвет ссылок */
+  transition: color 0.3s ease;
+}
+
+.nav_links a:hover {
+  color: white; /* Цвет ссылки при наведении */
+}
+
+.nav_links:hover a {
+  color: gray; /* Все ссылки становятся серыми */
+}
+
+.nav_links a:hover {
+  color: white !important; /* Сохраняем цвет активной ссылки */
+}
+html {
+  scroll-behavior: smooth;
+}
+.main_img{
+  width: 400px;
+  height: 200px;
+  z-index: 4;
+  margin-bottom: 190px;
+  margin-left: 400px;
+}
+.skills_text2{
+  font-size: 18px;
+   text-align: center;
+  color: white;
+  padding-bottom: 40px;
+}
+/* Начальное состояние для анимации (невидимый и сдвинутый) */
+.animate {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Стили при появлении блока */
+.slide-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+.footer h1{
+  font-size: 38px;
+}
